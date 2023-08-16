@@ -8,32 +8,47 @@
     <title>Explore sem limites</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <h1>Explore Sem limites</h1>
-            <p>Porque o aprendizado é contínuo</p>
-            <button>seta para baixo</button>
+            <div class="header__image"></div>
+            <div class="header__text">
+                <h1 class="header__title">Explore Sem limites</h1>
+                <p class="header__paragraph">Porque o aprendizado é contínuo</p>
+                <button class="header__button">V</button>
+            </div>
         </div>
-        <div>imagem astronauta</div>
     </header>
-    <section>
-        <div>Card1</div>
-        <div>Card2</div>
-        <div>Card3</div>
+    <section class="cards">
+        <div class="card">
+            <img src="./assets/orangeMoon.png" alt="" class="card__image">
+            <h2 class="card__titulo">Não pare nunca</h2>
+            <p class="card__paragraph">Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+        </div>
+        <div class="card">
+            <img src="./assets/blueMoon.png" alt="" class="card__image">
+            <h2 class="card__titulo">Só volta</h2>
+            <p class="card__paragraph">Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+        </div>
+        <div  class="card">
+            <img src="./assets/pinkMoon.png" alt="" class="card__image">
+            <h2 class="card__titulo">Siga seu ritmo</h2>
+            <p class="card__paragraph">Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+        </div>
     </section>
     <section>
-        <div>
-            <form action="">
-                <input type="text">
-                <input type="email" name="" id="">
-                <input type="text">
-                <button>Enviar mensagem</button>
+        <div class="form">
+            <h2 class="form__title">Entre em Contato</h2>
+            <form action="" class="form__inputs">
+                <input class="form__input" type="text" placeholder="Seu nome">
+                <input class="form__input" type="email" name="" id="" placeholder="Email">
+                <input class="form__text" type="text" placeholder="Digite sua mensagem aqui...">
+                <button class="form__button">Enviar mensagem</button>
             </form>
         </div>
-        <div>Imagem de fundo</div>
+        <div class="form__background"></div>
     </section>
-    <footer>
-        <p>© 2023 - Rocketseat Explorer</p>
+    <footer class="footer" >
+        <p class="footer__paragraph">© 2023 - Rocketseat Explorer</p>
     </footer>
 </body>
 </html>

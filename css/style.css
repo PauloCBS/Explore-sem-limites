@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap');
+
+:root{
+--fc-title: #B52184;
+--fc-paragraph: #312D64;
+}
+
+body{
+    height: 100vh;
+}
+.header{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;   
+}
+ 
+.header__text{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title{
+    color: var(--fc-title);
+    font-family: 'Mulish', sans-serif;
+    font-weight:900;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header__paragraph{
+    color: var(--fc-paragraph);
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight:600;
+    width: 100%;
+}
+
+.header__image {
+   background-image: url(../assets/atronaut.png);
+   background-repeat: no-repeat;
+   background-size:contain;
+   height: 50vh;
+}
+
+.header__button {
+    margin-top: 25%;
+    color: var(--fc-title);
+    background-color: #ffffff;
+    border-color: var(--fc-title);
+    width:58px;
+    height:150px;
+    border-radius: 25px;      
+}
+
+.header__button:hover {
+     background: rgb(49,45,100);
+    background:linear-gradient(0deg, rgba(49,45,100,0.6016457608433998) 0%, rgba(181,33,132,0.4839987020198705) 100%);
+    border-color: linear-gradient(0deg, rgba(49,45,100,0.6016457608433998) 0%, rgba(181,33,132,0.4839987020198705) 100%);
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fc-paragraph);
+}
+
+.card{
+    width: 60%;
+    margin: 10%;
+    background-color: #ffffff;
+    padding: 10%;
+    border-radius: 19.86px;
+}
+
+.card__titulo{
+    color: var(--fc-title);
+    font-size: 29.22px;
+    font-family: 'Mulish', sans-serif;
+    font-weight:900;
+    margin-top: 5%;
+}
+
+.card__paragraph{
+   
+
+}
+
+.form{
+
+    display: flex;
+    flex-direction:column;
+}
+
+.form__title{
+    color: var(--fc-title);
+    font-family: 'Mulish', sans-serif;
+    font-weight:900;
+    width: 100%;
+    font-size: 32px;
+    margin: 10% 5%;
+    font-weight: 700;
+}
+
+.form__inputs{
+    display: flex;
+    flex-direction:column;
+    align-items: center;  
+    
+}
+
+.form__input{
+    color: #312D64;
+    border-radius:16px;
+    height: 43px ;
+    width: 80%;
+    margin: 2%;
+}
+
+.form__text{
+    height: 126px;
+    color: #312D64;
+    border-radius:16px;
+    width: 80%;
+    margin: 2%;
+}
+
+.form__button{
+    margin-top: 25%;
+    color: white;
+    background-color:var(--fc-paragraph);
+    width:150px;
+    height:50px;
+    border-radius: 15px; 
+}
+
+.footer{
+    background-color: var(--fc-paragraph);
+    height: 78px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+  
+}
+
+.footer__paragraph{
+    color: white;
+    font-size: 19.38px;
+    font-family: 'Mulish', sans-serif;
+    font-weight:600;
+    margin-top: 5%;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) { }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) {
+
+    .header__title{
+        font-size: 42px;
+        font-weight: 700;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .header__title{
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .header__title{
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .card{
+        width: 20%;
+        margin: 5%;
+        background-color: #ffffff;
+        padding: 3%;
+        border-radius: 19.86px;
+    }
+}
